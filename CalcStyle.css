@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #DFE0E2;
+}
+.ParentContainer {
+    box-shadow: 10px 8px 8px black;
+    border-radius: 20px;
+    border: 2px black solid;
+    padding: 20px;
+    margin: 20px;
+    max-width: 500px;
+    max-height: 500px;
+    padding-bottom: 20px;
+    background-color: #677A8E;
+}
+.buttons {
+    padding-top: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns:  75px 75px 75px 75px;
+    grid-template-rows: 75px 75px 75px 75px;
+}
+
+.buttons
+button {
+    text-align: center;
+    border-radius: 10px;
+    background-color: #1D1E20;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 3px black solid;
+    color: white;
+}
+button:hover {
+    background-color: blanchedalmond;
+    color: black;
+}
+input {
+    border: black solid 3px;
+    border-radius: 10px;
+    background-color: #5B85AA;
+    margin: 0px;
+    padding: 20px;
+    padding-right: 60px;
+    font-size: 20px;
+    color: black;
+    
+}
+input:focus {
+    outline: black;
+}
+input::placeholder {
+    color: black;
+}
