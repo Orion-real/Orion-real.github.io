@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f0f0f0;
+    overflow: hidden;
+}
+.PictureLayoutContainer {
+    justify-content: center;
+    align-items: center;
+    border: 1px black solid;
+    margin: 2%;
+    padding: 2%;
+    width: 95dvw;
+    height: 90svh;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    background-color: wheat;
+}
+.Conveyer-belt {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+    width: 100%;
+    animation: scrollUp 90s linear infinite;
+    animation-play-state: running;
+}
+.image-set {
+    display: contents;
+}
+img {
+    border: 2px black solid;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+/*Animation for the conveyer-belt like motion jahahaha*/
+@keyframes scrollUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
