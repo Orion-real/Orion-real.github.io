@@ -1,0 +1,26 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+}
+
+p {
+    font-size: clamp(16px, 5vw, 40px);
+}
+
+.MainContainer {
+    display: flex;
+    border: 2px black solid;
+    margin: 10%;
+}
+
+.FontAndLetterLooks {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
